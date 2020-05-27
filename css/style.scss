@@ -1,3 +1,9 @@
+// var
+$font-color-h1: brown;
+$font-color-h2-h3: navy;
+$font-color-p: black;
+$text-shadow-h:grey;
+
 * {
   margin: 0;
   padding: 0;
@@ -17,18 +23,24 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
-  transform: translate(0%,10%);
+  transform: translate(0%, 10%);
+  img {
+    max-width: 250px;
+    margin-top: 30px;
+    box-shadow: 4px 4px 10px 4px rgba(160, 72, 72, 0.411);
+  }
 }
 
 .poem__h1 {
   padding: 40px 0;
-  color: brown;
-  text-shadow: 2px 2px 10px grey;
+  color: $font-color-h1;
+  text-shadow: 2px 2px 10px $text-shadow-h;
 }
 
-.poem__author, .poem__name {
-  color: navy;
-  text-shadow: 2px 2px 10px grey;
+.poem__author,
+.poem__name {
+  color: $font-color-h2-h3;
+  text-shadow: 2px 2px 10px $text-shadow-h;
 }
 
 .poem__p {
@@ -36,4 +48,5 @@ body {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
+  color: $font-color-p;
 }
